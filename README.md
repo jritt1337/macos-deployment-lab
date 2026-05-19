@@ -40,7 +40,7 @@ Once it is done running and the command prompt has returned to default, it shoul
 
 ## Step 2: Configure Brewfile
 
-Now that Homebrew is installed, let's create our Brewfile. But first, a brief explanation on some of the homebrew commands. There are two different commands used to install applications using Homebrew. 
+Now that Homebrew is installed, let's create our Brewfile. But first, a brief explanation on some of the Homebrew commands. There are two different commands used to install applications using Homebrew. 
 
 The `brew` command installs command line applications such as git, neovim, anything you would run via Terminal. 
 
@@ -60,7 +60,7 @@ This will create a folder named "Brewlab" in your home directory. To enter the f
 
 From here, let's create the Brewfile. Enter:
 
-`touch Brewfile`.
+`touch Brewfile`
 
 You can ensure that the file is present by entering `ls` or by navigating to the file itself from the Finder.
 
@@ -70,15 +70,15 @@ Now we need to edit it. We can do that with **nano**. While within this director
 
 ```nano Brewfile```
 
-You should now be inside of the nano text editor. 
+You should now be inside of the Nano text editor. 
 
 <img width="600" height="401" alt="image" src="https://github.com/user-attachments/assets/37409cab-131d-440c-bba5-84910dc3df81" />
 
-From here, we need to decide which packages we want installed. On the([Homebrew home page](https://brew.sh/), there is a search bar with which you can search for packages. 
+From here, we need to decide which packages we want installed. On the [Homebrew home page](https://brew.sh/), there is a search bar with which you can search for packages. 
 
 <img width="600" height="401" alt="Screenshot 2026-05-18 at 10 26 12 PM" src="https://github.com/user-attachments/assets/aa64279a-caf5-4b03-a10e-ebacafb555a4" />
 
-Think of a few programs you might want to find, and see if it exists within the package database. For the purposes of this lab, we're going to choose a few productivity applications:
+Think of a few programs or utilities you might want to find, and see if it exists within the package database. For the purposes of this lab, we're going to choose a few productivity applications:
 
 - Brew packages
   - git
@@ -90,10 +90,9 @@ Think of a few programs you might want to find, and see if it exists within the 
   - visual-studio-code
   - vlc
 
-So let's enter this into our Brewfile
+So let's enter the following into our Brewfile
 
 ``` 
-
 brew "git"
 brew "wget"
 brew "tree"
@@ -102,8 +101,18 @@ brew "python"
 cask "google-chrome"
 cask "visual-studio-code"
 cask "vlc"
-
 ```
+
+<img width="600" height="401" alt="Screenshot 2026-05-18 at 10 41 27 PM" src="https://github.com/user-attachments/assets/0d1a40ef-dfe1-4d58-bd0d-23bafb200272" />
+
+Once this has been entered, you can save the file by pressing **Control + O**, and pressing enter to save as "Brewfile"
+
+<img width="600" height="401" alt="Screenshot 2026-05-18 at 10 42 45 PM" src="https://github.com/user-attachments/assets/87d35148-6d74-4df8-a826-5d70669586b4" />
+
+
+Then exit with **Control + X**. To ensure this was written into the file correctly, enter `cat Brewfile`.
+<img width="600" height="401" alt="Screenshot 2026-05-18 at 10 46 49 PM" src="https://github.com/user-attachments/assets/9f558a98-de9d-409d-800d-3b59db290b23" />
+
 
 
 
