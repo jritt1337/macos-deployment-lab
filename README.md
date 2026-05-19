@@ -46,13 +46,65 @@ The `brew` command installs command line applications such as git, neovim, anyth
 
 The `cask` command installs GUI-based applications such as browsers, productivity software, development tools, anything you would run via your desktop
 
-So for example, if I wanted to install git, I would type `brew git` into the Terminal. If I wanted to install Firefox, it would be `cask firefox`. 
+So for example, if I wanted to install git, I would type `brew install git` into the Terminal. If I wanted to install Firefox, it would be `brew install --cask firefox`. 
 
-When creating a Brewfile, however, it is important to keep in mind the syntax needed for the command to work differs in that the package needs to be within quotations. So `brew "git"` for example. Let's get started on the Brewfile.
+When creating a Brewfile, however, the syntax differs from terminal commands. `brew install git` becomes `brew "git"` and `brew install --cask firefox` becomes `cask "firefox"`
 
 Let's make a new directory for this file. In the Terminal, type:
 
 `mkdir Brewlab`
+
+This will create a folder named "Brewlab" in your home directory. To enter the folder from the command line, enter:
+
+`cd Brewlab`
+
+From here, let's create the Brewfile. Enter:
+
+`touch Brewfile`.
+
+You can ensure that the file is present by entering `ls` or by navigating to the file itself from the Finder.
+
+<img width="600" height="401" alt="Screenshot 2026-05-18 at 10 17 27 PM" src="https://github.com/user-attachments/assets/3f80c70d-7930-4a63-8afd-7ea29c6aaba5" />
+
+Now we need to edit it. We can do that with **nano**. While within this directory, enter:
+
+```nano Brewfile```
+
+You should now be inside of the nano text editor. 
+
+<img width="600" height="401" alt="image" src="https://github.com/user-attachments/assets/37409cab-131d-440c-bba5-84910dc3df81" />
+
+From here, we need to decide which packages we want installed. On the([Homebrew home page](https://brew.sh/), there is a search bar with which you can search for packages. 
+
+<img width="600" height="401" alt="Screenshot 2026-05-18 at 10 26 12 PM" src="https://github.com/user-attachments/assets/aa64279a-caf5-4b03-a10e-ebacafb555a4" />
+
+Think of a few programs you might want to find, and see if it exists within the package database. For the purposes of this lab, we're going to choose a few productivity applications:
+
+- Brew packages
+  - git
+  - wget
+  - tree
+  - python
+- Cask packages
+  - google-chrome
+  - visual-studio-code
+  - vlc
+
+So let's enter this into our Brewfile
+
+``` 
+
+brew "git"
+brew "wget"
+brew "tree"
+brew "python"
+
+cask "google-chrome"
+cask "visual-studio-code"
+cask "vlc"
+
+```
+
 
 
 
