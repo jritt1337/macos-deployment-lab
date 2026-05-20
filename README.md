@@ -110,7 +110,7 @@ Once this has been entered, you can save the file by pressing **Control + O**, a
 <img width="600" height="401" alt="Screenshot 2026-05-18 at 10 42 45 PM" src="https://github.com/user-attachments/assets/87d35148-6d74-4df8-a826-5d70669586b4" />
 
 
-Then exit with **Control + X**. To ensure this was written into the file correctly, enter `cat Brewfile`.
+Then exit with **Control + X**. To ensure this was written into the file correctly, enter `cat Brewfile` into the Terminal.
 <img width="600" height="401" alt="Screenshot 2026-05-18 at 10 46 49 PM" src="https://github.com/user-attachments/assets/9f558a98-de9d-409d-800d-3b59db290b23" />
 
 
