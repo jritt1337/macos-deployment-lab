@@ -101,6 +101,7 @@ brew "python"
 cask "google-chrome"
 cask "visual-studio-code"
 cask "vlc"
+cask "slack"
 ```
 
 <img width="600" height="401" alt="Screenshot 2026-05-18 at 10 41 27 PM" src="https://github.com/user-attachments/assets/0d1a40ef-dfe1-4d58-bd0d-23bafb200272" />
